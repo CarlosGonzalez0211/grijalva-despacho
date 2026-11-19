@@ -13,13 +13,13 @@ const faqs = [
 export default function Faq() {
   const [open, setOpen] = useState<number | null>(0)
   return (
-    <section id="preguntas" className="bg-paper-2 px-4 py-24 md:py-40">
-      <div className="mx-auto max-w-3xl">
+    <section id="preguntas" className="bg-paper px-4 py-24 md:py-40">
+      <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-[1fr_1.5fr]">
         <Reveal>
-          <span className="inline-block rounded-full bg-pine/[0.07] px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-moss">Preguntas frecuentes</span>
-          <h2 className="mt-6 font-display text-4xl font-light leading-[1.05] tracking-[-0.02em] md:text-5xl">Lo que más nos preguntan</h2>
+          <span className="inline-block rounded-full bg-pine px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-lime">Preguntas frecuentes</span>
+          <h2 className="display mt-6 text-[clamp(2.6rem,6vw,5rem)] text-pine">Lo que más nos preguntan.</h2>
         </Reveal>
-        <div className="mt-12 divide-y divide-pine/10 border-y border-pine/10">
+        <div className="divide-y-2 divide-pine border-y-2 border-pine">
           {faqs.map(([q, a], i) => {
             const isOpen = open === i
             return (
@@ -27,13 +27,15 @@ export default function Faq() {
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-6 py-6 text-left font-display text-xl md:text-2xl"
+                  className="flex w-full items-center justify-between gap-6 py-6 text-left font-display text-xl font-semibold tracking-tight text-pine md:text-2xl"
                 >
                   {q}
-                  <Plus size={22} weight="light" className={`shrink-0 text-clay transition-transform duration-500 ease-out-soft ${isOpen ? 'rotate-45' : ''}`} />
+                  <span className={`grid size-10 shrink-0 place-items-center rounded-full transition-colors duration-500 ${isOpen ? 'bg-lime' : 'bg-pine text-lime'}`}>
+                    <Plus size={20} weight="bold" className={`transition-transform duration-500 ease-out-soft ${isOpen ? 'rotate-45' : ''}`} />
+                  </span>
                 </button>
                 <div className={`grid transition-[grid-template-rows] duration-500 ease-out-soft ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
-                  <p className="overflow-hidden leading-relaxed text-ink/65">
+                  <p className="overflow-hidden leading-relaxed text-ink/70">
                     <span className="block pb-6">{a}</span>
                   </p>
                 </div>
