@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { wa } from '../config'
 
 const links = [
+  ['Nosotros', '#nosotros'],
   ['Servicios', '#servicios'],
   ['Cómo trabajamos', '#proceso'],
   ['Preguntas', '#preguntas'],

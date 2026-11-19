@@ -17,7 +17,7 @@ export default function Footer() {
         </Reveal>
         <div className="mt-24 flex flex-col items-start justify-between gap-3 border-t border-white/15 pt-8 text-sm text-paper/50 md:flex-row md:items-center">
           <span className="display text-xl text-paper">
-            Grijalva<span className="text-lime">.</span> <span className="font-sans text-sm font-normal tracking-normal text-paper/50">Despacho contable</span>
+            Grijalva<span className="text-lime">.</span> <span className="font-sans text-sm font-normal tracking-normal text-paper/50">Despacho contable · Ciudad Juárez</span>
           </span>
           <span>
             © {new Date().getFullYear()} Todos los derechos reservados · Fotografías de{' '}

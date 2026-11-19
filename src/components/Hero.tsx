@@ -26,19 +26,11 @@ export default function Hero() {
       <div className="grain absolute inset-0" />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-end px-4 pb-14 pt-40 md:pb-20">
-        <motion.span
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease }}
-          className="w-fit rounded-full bg-lime px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-pine"
-        >
-          Despacho contable y fiscal
-        </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1, ease }}
-          className="display mt-6 text-[clamp(3.2rem,11.5vw,10.5rem)]"
+          className="display text-[clamp(3.2rem,11.5vw,10.5rem)]"
         >
           Tus impuestos,
           <br />
