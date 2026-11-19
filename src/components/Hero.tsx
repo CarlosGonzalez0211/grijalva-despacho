@@ -15,7 +15,7 @@ const ticker = [
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative flex min-h-[100dvh] flex-col overflow-hidden bg-pine text-paper">
+    <section id="inicio" className="relative flex min-h-[100svh] flex-col overflow-hidden bg-pine text-paper">
       <img
         src="/images/hero.jpg"
         alt="Contador capturando cifras en una calculadora sobre su escritorio"
@@ -51,8 +51,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative overflow-hidden border-t border-white/15 bg-pine/70 py-5 backdrop-blur-sm" aria-hidden="true">
-        <div className="marquee-track flex w-max gap-12 whitespace-nowrap text-sm font-semibold uppercase tracking-[0.18em] text-paper/70">
+      <div className="relative overflow-hidden border-t border-white/15 bg-pine/90 py-5" aria-hidden="true">
+        <div className="marquee-track flex w-max will-change-transform gap-12 whitespace-nowrap text-sm font-semibold uppercase tracking-[0.18em] text-paper/70">
           {[...ticker, ...ticker].map((t, i) => (
             <span key={i} className="flex items-center gap-12">
               {t}
