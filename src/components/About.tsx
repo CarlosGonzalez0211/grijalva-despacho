@@ -8,7 +8,7 @@ const facts = [
 
 export default function About() {
   return (
-    <section id="nosotros" className="bg-paper px-4 py-24 md:py-40">
+    <section id="nosotros" className="bg-paper px-4 pb-12 pt-24 md:pb-16 md:pt-40">
       <div className="mx-auto grid max-w-6xl items-center gap-14 md:grid-cols-[1.05fr_1fr] md:gap-20">
         <Reveal>
           <span className="inline-block rounded-full bg-pine px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-lime">Nosotros</span>
