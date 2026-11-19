@@ -13,14 +13,14 @@ export default function About() {
         <Reveal>
           <span className="inline-block rounded-full bg-pine px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-lime">Nosotros</span>
           <div className="mt-8 flex items-end gap-4">
-            <span className="display text-[clamp(7rem,20vw,15rem)] leading-[0.8] text-pine">30<span className="text-lime [-webkit-text-stroke:3px_var(--color-pine)]">+</span></span>
+            <span className="display text-[clamp(7rem,20vw,15rem)] leading-[0.8] text-pine">40<span className="text-lime [-webkit-text-stroke:3px_var(--color-pine)]">+</span></span>
             <span className="display pb-3 text-3xl leading-[0.95] text-pine md:pb-6 md:text-5xl">años de<br />experiencia</span>
           </div>
           <h2 className="display mt-10 max-w-xl text-3xl text-moss md:text-[2.6rem] md:leading-[1]">
             Cuidando las cuentas de los negocios de Ciudad Juárez.
           </h2>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/70">
-            Llevamos más de tres décadas acompañando a empresas de Ciudad Juárez, desde el comercio de la esquina hasta compañías grandes. Hemos visto cambiar la ley, el SAT y la ciudad, y en todo ese tiempo seguimos trabajando igual: hablamos claro, respondemos rápido y tratamos tus obligaciones como si fueran nuestras.
+            Llevamos más de cuatro décadas acompañando a empresas de Ciudad Juárez, desde el comercio de la esquina hasta compañías grandes. Hemos visto cambiar la ley, el SAT y la ciudad, y en todo ese tiempo seguimos trabajando igual: hablamos claro, respondemos rápido y tratamos tus obligaciones como si fueran nuestras.
           </p>
         </Reveal>
 
